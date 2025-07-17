@@ -84,6 +84,7 @@ header {
     
     .banner {
         grid-template-columns: 1fr;
+        gap: 36px;
     }
 
     .banner-description {
@@ -91,7 +92,10 @@ header {
     }
 
     .banner-image img {
+        max-height: 400px;
+        height: 100%;
         width: 100%;
+        object-fit: contain;
     }
 }
 
@@ -105,6 +109,7 @@ header {
 
     .banner {
         grid-template-columns: 1fr;
+        gap: 36px;
     }
 
     .banner-title {
@@ -129,7 +134,8 @@ header {
     }
 
     .banner {
-        grid-template-columns: 1fr .75fr;
+        grid-template-columns: 1fr;
+        gap: 36px;
     }
 
     .banner-description {
@@ -137,9 +143,10 @@ header {
     }
 
     .banner-image img {
+        max-height: 500px;
+        height: 100%;
         width: 100%;
-        position: relative;
-        bottom: -30px;
+        object-fit: contain;
     }
 }
 
