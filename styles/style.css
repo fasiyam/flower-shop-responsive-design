@@ -9,7 +9,7 @@
 
 body {
     font-family: "Lato";
-    max-width: 1200px;
+    max-width: 1440px;
 }
 
 /* Shared styles */
@@ -51,7 +51,7 @@ body {
     gap: 97px;
     background-color: rgba(229, 84, 115, 0.1);
     margin-bottom: 100px;
-    padding: 16px 16px 0 16px;
+    padding: 16px 16px 0 0;
 }
 
 .banner-description {
@@ -105,6 +105,11 @@ body {
     .banner {
         flex-direction: column;
         justify-content: center;
+        padding: 8px 8px 0 8px;
+    }
+    .banner-description {
+        padding-left: 8px;
+        max-width: 100%;
     }
     
 }
@@ -120,6 +125,14 @@ body {
     .banner {
         flex-direction: column;
         justify-content: center;
+        padding: 8px 8px 0 8px;
+    }
+    .banner-title {
+        font-size: 3rem;
+    }
+
+    .banner-description {
+        padding-left: 0;
     }
 }
 
