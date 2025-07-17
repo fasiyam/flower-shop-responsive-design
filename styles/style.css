@@ -73,6 +73,41 @@ header {
 }
 
 
+/* featured flowers section */
+
+.featured-flowers {
+    margin: 0 120px 0 120px;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 24px;
+    margin-bottom: 120px;
+}
+
+.flowers {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.flowers a {
+    color: #272727;
+    font-size: 1.5rem;
+}
+
+.flower {
+    background-color: rgba(167, 33, 98, 0.15);
+    border-radius: 50% 50% 0 0;
+    width: 420px;
+    height: 480px;
+    margin-bottom: 32px;
+}
+
+.flower img {
+    width: 99%;
+    height: 99%;
+    object-fit: contain;
+}
+
 
 
 /* Device below 576px */
@@ -82,7 +117,8 @@ header {
         font-size: 60%;
     }
     
-    .banner {
+    .banner,
+    .featured-flowers {
         grid-template-columns: 1fr;
         gap: 36px;
     }
@@ -97,6 +133,18 @@ header {
         width: 100%;
         object-fit: contain;
     }
+
+    /* Featured flowers section for mobile */
+    
+    .featured-flowers {
+        margin: 8px;
+    }
+
+    .flower {
+    width: 280px;
+    height: 320px;
+    margin-bottom: 32px;
+}
 }
 
 
@@ -107,10 +155,12 @@ header {
         font-size: 75%;
     }
 
-    .banner {
+    .banner,
+    .featured-flowers {
         grid-template-columns: 1fr;
         gap: 36px;
         max-height: 100dvh;
+        margin-bottom: 100dvh;
     }
 
     .banner-title {
@@ -124,6 +174,17 @@ header {
     .banner-image img {
         width: 100%;
     }
+
+    /* featured image section */
+
+    .featured-flowers {
+        margin: 8px;
+    }
+
+    .flower {
+    width: 280px;
+    height: 320px;
+    margin-bottom: 32px;
 }
 
 
