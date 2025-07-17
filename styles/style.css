@@ -9,7 +9,7 @@
 
 body {
     font-family: "Lato";
-    max-width: 1440px;
+    max-width: 100%;
 }
 
 /* Shared styles */
@@ -38,32 +38,33 @@ body {
     line-height: 1.67;
 }
 
-.display-flex {
-    display: flex;
+.display-grid {
+    display: grid;
 }
 
 
 /* Header style */
 
+header {
+    background-color: rgba(229, 84, 115, 0.1);
+}
+
 .banner {
+    grid-template-columns: 1.5fr 1fr;
+    gap: 96px;
     align-items: center;
     justify-content: center;
-    gap: 97px;
-    background-color: rgba(229, 84, 115, 0.1);
-    margin-bottom: 100px;
-    padding: 16px 16px 0 0;
+    margin-bottom: 180px;
 }
 
 .banner-description {
-    max-width: 50%;
-    padding-left: 120px;
+    max-width: 708px;
+    margin-left: 120px;
 }
-
 
 .banner-title {
     font-size: 5rem;
     font-weight: 800;
-    color: #272727;
     margin-bottom: 32px;
 }
 
@@ -71,68 +72,81 @@ body {
     margin-bottom: 32px;
 }
 
-.banner-image img {
-    width: 100%;
-}
 
 
 
-/* Extra Small device (less than) 576px */
+/* Device below 576px */
 
 @media screen and (max-width: 576px) {
     html {
-        font-size: 62.5%;
+        font-size: 60%;
     }
-
+    
     .banner {
-        flex-direction: column;
-        padding: 8px 8px 0 8px;
+        grid-template-columns: 1fr;
     }
 
     .banner-description {
-        padding-left: 0;
-        max-width: 100%;
+        margin: 8px;
+    }
+
+    .banner-image img {
+        width: 100%;
     }
 }
 
 
-/* For Small devices 576px - 992px */
+/* Device within 576px and 768px */
 
-@media screen and (min-width:576px) and (max-width: 768px) {
+@media screen and (min-width: 576px) and (max-width: 768px) {
     html {
         font-size: 75%;
     }
+
     .banner {
-        flex-direction: column;
-        justify-content: center;
-        padding: 8px 8px 0 8px;
+        grid-template-columns: 1fr;
     }
+
+    .banner-title {
+        font-size: 2.5rem;
+    }
+
     .banner-description {
-        padding-left: 8px;
-        max-width: 100%;
+        margin: 16px;
     }
-    
+
+    .banner-image img {
+        width: 100%;
+    }
 }
 
 
-/* For medium size device  768px - 992px*/
+/* Device within 768px and 992px */
 
 @media screen and (min-width: 768px) and (max-width: 992px) {
     html {
-        font-size: 75%;
+        font-size: 90%;
     }
 
     .banner {
-        flex-direction: column;
-        justify-content: center;
-        padding: 8px 8px 0 8px;
-    }
-    .banner-title {
-        font-size: 3rem;
+        grid-template-columns: 1fr .75fr;
     }
 
     .banner-description {
-        padding-left: 0;
+        margin: 16px;
     }
+
+    .banner-image img {
+        width: 100%;
+        position: relative;
+        bottom: -30px;
+    }
+}
+
+
+/* device within 992px and 1200px */
+
+@media screen and (min-width: 992px) and (max-width:1200px) {
+    
 }
 
