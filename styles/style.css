@@ -110,6 +110,7 @@ header {
     .banner {
         grid-template-columns: 1fr;
         gap: 36px;
+        max-height: 100dvh;
     }
 
     .banner-title {
@@ -136,6 +137,7 @@ header {
     .banner {
         grid-template-columns: 1fr;
         gap: 36px;
+        max-height: 100dvh;
     }
 
     .banner-description {
